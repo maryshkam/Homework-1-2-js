@@ -4,7 +4,12 @@ var userPower;
 userNumber = +prompt('Please enter the number of exponentiation', '');
 userPower = +prompt('Please enter the number of power', '');
 
-console.log('Result is', pow(userNumber, userPower) );
+if ( (Number.isInteger(userNumber) == false) || (Number.isInteger(userPower) == false) ) {
+	console.log('Error: Number and power should be integer');
+} else {
+	console.log('Result is ', pow(userNumber, userPower) );
+}
+
 function pow(number, power) {
 	
 var result = number;
