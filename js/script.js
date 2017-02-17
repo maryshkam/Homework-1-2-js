@@ -7,12 +7,6 @@ if ( (typeof(userNumber) === 'number') && (typeof(userPower) === 'number')  && (
 	console.log('Error: the number and power shoud be number');
 	}
 
-/*if ( (Number.isInteger(userNumber) == false) || (Number.isInteger(userPower) == false) ) {
-	console.log('Error: Number and power should be integer');
-} else {
-	console.log('Result is ', pow(userNumber, userPower) );
-}*/
-
 function pow(number, power) {
 	
 var result = number;
