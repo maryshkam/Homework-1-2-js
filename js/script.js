@@ -1,14 +1,17 @@
-var userNumber;
-var userPower;
+var userNumber = +prompt('Enter your number for calculation power');
+var userPower = +prompt('Enter your power');
 
-userNumber = +prompt('Please enter the number of exponentiation', '');
-userPower = +prompt('Please enter the number of power', '');
+if ( (typeof(userNumber) === 'number') && (isNaN(userNumber) === false) && (typeof(userPower) === 'number')  && (Number.isInteger(userPower) == false)) {
+    console.log('Result is', pow(userNumber, userPower) );
+} else {
+	console.log('Error: the number and power shoud be number');
+	}
 
-if ( (Number.isInteger(userNumber) == false) || (Number.isInteger(userPower) == false) ) {
+/*if ( (Number.isInteger(userNumber) == false) || (Number.isInteger(userPower) == false) ) {
 	console.log('Error: Number and power should be integer');
 } else {
 	console.log('Result is ', pow(userNumber, userPower) );
-}
+}*/
 
 function pow(number, power) {
 	
